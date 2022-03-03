@@ -1,5 +1,4 @@
 <div class="p-10">
-  <!--Card 1-->
   <div  *ngFor="let pokemon of pokemons">
   <div *ngIf="pokemon.type === type" class="max-w-sm rounded overflow-hidden shadow-lg">
     <img class="w-full" [src]='"assets/"+pokemon.name.toLocaleLowerCase()+".png"' alt="Pikachu">

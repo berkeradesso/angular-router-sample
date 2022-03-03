@@ -33,11 +33,12 @@ export class SearchListComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) { }
 
+  //TODO 5: Query paramları fetch etme
   ngOnInit(): void {
-    this.route.queryParams.subscribe((queryParam: Params) => {
+  /*  this.route.queryParams.subscribe((queryParam: Params) => {
       this.type = queryParam['type']
     })
-
+*/
   }
 
 }

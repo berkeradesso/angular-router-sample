@@ -15,9 +15,11 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //TODO 4: Query param göndermek ve sayfalar arası navigasyon
   filterByType(event: any) {
-    let type: String = event.target.innerText;
+  /*  let type: String = event.target.innerText;
     this.router.navigate(['/pokemons','search'], { queryParams: {type: type}});
+  */
   }
 
   onLogin() {

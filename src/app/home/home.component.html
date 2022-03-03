@@ -7,7 +7,7 @@
     </button>
     <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 w-24">
       <li class=""><button class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap w-24" (click)="this.filterByType($event)">Electric</button></li>
-      <li class=""><button class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wra w-24" (click)="this.filterByType($event)">Fire</button></li>
+      <li class=""><button class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wra w-24" [routerLink]="['pokemons','search']" [queryParams]="{type: 'fire'}">Fire</button></li>
       <li class=""><button class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap w-24" (click)="this.filterByType($event)">Water</button></li>
     </ul>
   </div>

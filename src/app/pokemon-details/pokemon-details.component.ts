@@ -7,28 +7,29 @@ import {ActivatedRoute, Params} from "@angular/router";
   styleUrls: ['./pokemon-details.component.scss']
 })
 export class PokemonDetailsComponent implements OnInit {
+
   pokemonName: string = '';
   pokemonType: string = '';
 
-
+//TODO 3: Fetching route params & passing params to route, activatedRoute, activatedRouteSnapshot
   constructor(
-    private route: ActivatedRoute,
+    //private route: ActivatedRoute,
   ) { }
 
 
   ngOnInit(): void {
-    this.pokemonName = this.route.snapshot.params['name'];
-    this.pokemonType = this.route.snapshot.params['type']
+/*
+        this.pokemonName = this.route.snapshot.params['name'];
+        this.pokemonType = this.route.snapshot.params['type']
 
 
-    this.route.params
-      .subscribe(
-        (param: Params) => {
-          this.pokemonName = param['name'];
-          this.pokemonType = param['type'];
-        }
-      );
-
+        this.route.params
+          .subscribe(
+            (param: Params) => {
+              this.pokemonName = param['name'];
+              this.pokemonType = param['type'];
+            }
+          );
+*/
   }
-
 }

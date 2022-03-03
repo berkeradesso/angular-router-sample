@@ -9,14 +9,17 @@ import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 import {AuthGuard} from "./auth-guard.service";
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'pokemons', component: PokemonListComponent, canActivateChild:[AuthGuard], children: [
+ {path: '', component: HomeComponent},
+  {path: 'trainers', component: TrainerListComponent},
+  // TODO 1: Sayfalarımızın register işlemi
+  /*
+  {path: 'pokemons', component: PokemonListComponent, children: [
       {path: ':type/:name', component: PokemonDetailsComponent},
       {path: 'search', component: SearchListComponent}
     ]},
-  {path: 'trainers', component: TrainerListComponent, canActivate:[AuthGuard]},
   {path: 'not-found', component: PageNotFoundComponent},
   {path: '**', component: PageNotFoundComponent}
+*/
 ];
 
 @NgModule({

@@ -11,9 +11,10 @@ import {AuthService} from "./auth.service";
 import {Observable} from "rxjs";
 
 @Injectable()
-export class AuthGuard implements CanActivate, CanActivateChild {
+export class AuthGuard {
   constructor (private authService: AuthService, private router:Router) {}
-
+  //TODO 6: Guard'lar, canActivate, canActivateChild interfaceleri
+/*
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     return this.authService.checkLogin()
       .then(
@@ -30,4 +31,5 @@ export class AuthGuard implements CanActivate, CanActivateChild {
   canActivateChild(childRoute: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     return this.canActivate(childRoute, state);
   }
+ */
 }
