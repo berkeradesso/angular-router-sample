@@ -5,25 +5,33 @@
       <ul
         class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"
       >
-        <li>
+        <li
+          class="px-2 py-2"
+          routerLinkActive="bg-green-400"
+          [routerLinkActiveOptions]="{exact: true}">
           <a
-            href="#"
+            routerLink=""
             class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
           >
             Home
           </a>
         </li>
-        <li>
+        <li
+          class="px-2 py-2"
+          routerLinkActive="bg-green-400">
           <a
-            href="/pokemons"
+            routerLink="/pokemons"
             class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
           >
             Pokemon List
           </a>
         </li>
-        <li>
+        <li
+          class="px-2 py-2"
+          routerLinkActive="bg-green-400"
+        >
           <a
-            href="/trainers"
+            routerLink="/trainers"
             class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
           >
             Trainer List</a
@@ -34,13 +42,11 @@
 
   </div>
 
-  <div class="flex flex-row w-4/5 justify-between">
+  <!--<div class="flex flex-row w-4/5 justify-between">
     <app-pokemon-list></app-pokemon-list>
     <app-trainer-list></app-trainer-list>
-  </div>
-  <app-pokemon-details></app-pokemon-details>
-  <!-- Routing Module tanımlandıktan sonra
-    <router-outlet></router-outlet> -->
+  </div> -->
+    <router-outlet></router-outlet>
 
 </div>
 

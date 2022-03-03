@@ -1,17 +1,14 @@
 <div class="p-10">
   <!--Card 1-->
   <div class="max-w-sm rounded overflow-hidden shadow-lg">
-    <img class="w-full" src="/assets/pikachu.png" alt="Pikachu">
+    <img class="w-full" [src]='"assets/"+pokemonName.toLocaleLowerCase()+".png"' alt="Pikachu">
     <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2">{{'Pikachu'}}</div>
+      <div class="font-bold text-xl mb-2">{{pokemonName}}</div>
       <p class="text-gray-700 text-base">
-        ID: {{'1'}}
+        Name: {{pokemonName}}
       </p>
       <p class="text-gray-700 text-base">
-        Name: {{'Pikachu'}}
-      </p>
-      <p class="text-gray-700 text-base">
-        Type: {{'Electric'}}
+        Type: {{pokemonType}}
       </p>
     </div>
     <div class="px-6 pt-4 pb-2">

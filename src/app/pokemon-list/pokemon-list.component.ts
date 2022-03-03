@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-pokemon-list',
@@ -8,18 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class PokemonListComponent {
   pokemons = [
     {
-      id: 1,
-      name: 'Pikachu'
+      name: 'Pikachu',
+      type: 'Electric'
     },
     {
-      id: 2,
-      name: 'Onyx'
+      name: 'Onix',
+      type: 'Rock',
     },
     {
-      id: 3,
-      name: 'Psyduck'
+      name: 'Psyduck',
+      type: 'Water'
     }
   ];
+
 }
 
 

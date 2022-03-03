@@ -7,6 +7,8 @@ import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { TrainerListComponent } from './trainer-list/trainer-list.component';
 import { PokemonDetailsComponent } from './pokemon-details/pokemon-details.component';
 import { TrainerDetailsComponent } from './trainer-details/trainer-details.component';
+import { SearchListComponent } from './search-list/search-list.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { TrainerDetailsComponent } from './trainer-details/trainer-details.compo
     PokemonListComponent,
     TrainerListComponent,
     PokemonDetailsComponent,
-    TrainerDetailsComponent
+    TrainerDetailsComponent,
+    SearchListComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
